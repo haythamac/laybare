@@ -30,7 +30,7 @@
                             <td>{{ $product->product_category }}</td>
                             <td>{{ $product->product_description }}</td>
                             <td>{{ $product->product_sku }}</td>
-                            <td>{{ $product->user_id }}</td>
+                            <td>{{ $product->user->first_name. ' ' . $product->user->last_name }}</td>
                             <td>{{ $product->created_at }}</td>
                             <td><a href="/products/edit/{{ $product->id }}" style="text-decoration: none; color: green">Edit</a></td>
                             <td>
